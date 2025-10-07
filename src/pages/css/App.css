@@ -32,6 +32,7 @@
     overflow: hidden;
     flex-grow: 1;
     border: none;
+    background-color: light-dark(#e0e0e0, #3a3a3a);
     border-radius: 1.5rem;
     box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -48,6 +49,7 @@
     & input {
       border: none;
       height: 100%;
+      background-color: inherit;
 
       &::placeholder {
         color: black;
@@ -58,7 +60,7 @@
   }
 
   & .filter-button {
-    background-color: #EF2A39;
+    background-color: light-dark(var(--color-primary), var(--color-primary-dark));
     width: 3.75rem;
     height: 3.75rem;
     padding: .5rem;
@@ -86,8 +88,9 @@
   overflow: hidden;
   border-radius: 1rem;
   text-decoration: none;
-  color: black;
-  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
+  color: light-dark(#000, #f2f2f2);
+  box-shadow: 0 5px 10px 0px light-dark(rgba(0, 0, 0, 0.15), rgba(95, 95, 95, 0.066));
+  transition: .3s ease-out;
 
   &:active {
     transform: scale(0.98);
@@ -145,6 +148,10 @@
   }
 }
 
+.svg-primary {
+  fill: light-dark(var(--color-primary), var(--color-primary-dark));
+}
+
 .footer {
   display: flex;
   position: fixed;
@@ -155,6 +162,7 @@
   & svg {
     width: 100%;
   }
+
   & .footer-plus {
     position: absolute;
     display: flex;
@@ -164,8 +172,8 @@
     bottom: 2rem;
     align-items: center;
     justify-content: center;
-    
-  
+
+
   }
 
   & .footer-icons {
@@ -176,6 +184,7 @@
     padding: 1rem 2rem;
     bottom: .5rem;
     overflow: hidden;
+
     &.icons-left {
       left: 0;
     }

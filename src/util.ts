@@ -9,7 +9,10 @@ const mockData = [
         price: 8.24,
         rating: 4.9,
         image: "/images/burgers/cheeseburger.png",
-        liked: false
+        liked: false,
+        time: 26,
+        description: "The Cheeseburger Wendy's Burger is a classic fast food burger that packs a punch of flavor in every bite. Made with a juicy beef patty cooked to perfection, it's topped with melted American cheese, crispy lettuce, ripe tomato, and crunchy pickles.",
+        heat: 6
     },
     {
         id: "2",
@@ -18,7 +21,8 @@ const mockData = [
         price: 12.5,
         rating: 4.8,
         image: "/images/burgers/veggie.png",
-        liked: false
+        liked: false,
+        time: 26,
     },
     {
         id: "3",
@@ -27,7 +31,8 @@ const mockData = [
         price: 12.5,
         rating: 4.6,
         image: "/images/burgers/chickenBurger2.png",
-        liked: false
+        liked: false,
+        time: 26,
     },
     {
         id: "4",
@@ -36,7 +41,8 @@ const mockData = [
         price: 12.5,
         rating: 4.5,
         image: "/images/burgers/chickenBurger.png",
-        liked: false
+        liked: false,
+        time: 26
     },
 ];
 
