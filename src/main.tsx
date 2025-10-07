@@ -18,6 +18,9 @@ const router = createBrowserRouter([
   },
   {
     path: '/',
+    loader: () => {
+      return {hello: "world"}
+    },
     children: [
       {
         path: '/product/:id',
