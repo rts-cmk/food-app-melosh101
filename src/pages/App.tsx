@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import { Link, NavLink, useLoaderData } from 'react-router'
-import { searchProducts, useCurrentUser } from '../util';
-import type { Burger } from '../util';
+import { Link, NavLink, useLoaderData, useRouteLoaderData } from 'react-router'
+import { searchProducts } from '../util';
+import type { Burger, User } from '../util';
 import './css/App.css'
 
 
 function App() {
   const { products } = useLoaderData();
   const [productList, setProductList] = useState(products)
-  const currentUser = useCurrentUser();
+  const {user:currentUser} = useRouteLoaderData("root") as {user: User}
 
   const toggleLiked = (id: string) => {
     setProductList(productList.map((product: Burger) => {

@@ -65,9 +65,9 @@ const mockUsers = [
 
 export type User = typeof mockUsers[0];
 
-export function useCurrentUser() {
-    const [user] = useState(mockUsers[0]);
-    return user;
+export function getCurrentUser() {
+    console.log("getting user")
+    return mockUsers[0];
 }
 
 
