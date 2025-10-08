@@ -55,7 +55,7 @@ export default function ProductPage() {
                     <button onClick={() => setCount(count + 1)}>
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 7H12" stroke="white" strokeWidth="3" strokeLinecap="round" />
-                            <path d="M7 12L7 2" stroke="white" strokeWidth="3" strokeLinecap="round" />
+                            <path d="M7 12L7 2" stroke="white" strokeWidth="3" strokeinecap="round" />
                         </svg>
 
                     </button>

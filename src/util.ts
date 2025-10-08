@@ -59,6 +59,7 @@ const mockUsers = [
         name: "Melosh",
         email: "melosh@example.com",
         avatar: "/images/users/alice.png",
+        address: "123 Main St, City, Country",
     },
 ]
 
