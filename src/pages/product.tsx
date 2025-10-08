@@ -18,7 +18,7 @@ export default function ProductPage() {
             </button>
             <button aria-label="Search" className="search">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1_133)">
+                    <g clipPath="url(#clip0_1_133)">
                         <path d="M19.6345 17.8712L15.7636 13.9986C18.66 10.128 17.8702 4.64213 13.9996 1.7457C10.129 -1.15074 4.64312 -0.360973 1.74669 3.50967C-1.14974 7.38032 -0.359982 12.8661 3.51066 15.7626C6.61989 18.0892 10.8903 18.0892 13.9996 15.7626L17.8722 19.6352C18.3588 20.1218 19.1479 20.1218 19.6345 19.6352C20.1211 19.1485 20.1211 18.3595 19.6345 17.8729L19.6345 17.8712ZM8.7874 15.0151C5.34736 15.0151 2.55868 12.2265 2.55868 8.78641C2.55868 5.34637 5.34736 2.55769 8.7874 2.55769C12.2274 2.55769 15.0161 5.34637 15.0161 8.78641C15.0125 12.2249 12.2259 15.0115 8.7874 15.0151Z" />
                     </g>
                     <defs>
@@ -32,7 +32,7 @@ export default function ProductPage() {
         <main className="product-main">
             <img src={product.image} alt="" className="hero-img" />
             <h1 className="product-name">{product.name} {product.summary}</h1>
-            <p className="product-details"><span>
+            <p className="product-details"><span className="product-rating">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.9781 15.5435L8.00013 11.8848L3.02213 15.5435L4.93346 9.63481L-0.0418701 5.99948H6.1008L8.00013 0.0808105L9.89946 5.99948H16.0415L11.0668 9.63481L12.9781 15.5435Z" fill="#FF9633" />
                 </svg>
@@ -54,8 +54,8 @@ export default function ProductPage() {
                 <div className="product-portions">
                     <button onClick={() => setCount(count + 1)}>
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 7H12" stroke="white" stroke-width="3" stroke-linecap="round" />
-                            <path d="M7 12L7 2" stroke="white" stroke-width="3" stroke-linecap="round" />
+                            <path d="M2 7H12" stroke="white" strokeWidth="3" strokeLinecap="round" />
+                            <path d="M7 12L7 2" stroke="white" strokeWidth="3" strokeLinecap="round" />
                         </svg>
 
                     </button>

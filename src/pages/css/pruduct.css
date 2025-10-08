@@ -24,7 +24,8 @@
     margin-top: 1rem;
     min-height: 100vh;
     padding: 1rem;
-    
+    display: flex;
+    flex-direction: column;
     .hero-img {
         width: 100%;
     }
@@ -34,6 +35,7 @@
     }
     .product-description {
         text-wrap: balance;
+        color: light-dark(var(--color-text-secondary), oklch(from var(--color-text-secondary) 90% c h));
     }
 
     .product-spicy {
@@ -48,7 +50,22 @@
     }
     .product-order {
         display: flex;
+        margin-top: auto;
         justify-content: space-between;
+    }
+    .product-options {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-details {
+        display: flex;
+        gap: .5rem;
+        color: light-dark(var(--color-text-secondary), oklch(from var(--color-text-secondary) 90% c h));
+        & .product-rating{
+            display: flex;
+            gap: .25rem;
+        }
     }
 
     .product-portions {
