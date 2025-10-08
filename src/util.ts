@@ -1,5 +1,4 @@
 import Fuse from "fuse.js";
-import { useState } from "react";
 
 const mockData = [
     {
